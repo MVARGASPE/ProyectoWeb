@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Proyecto</title>
+</head>
+
+
+<header>
+    <div class="p-3 mb-2 bg-primary text-white">
+        <h2>Wish</h2>
+        <p>Type something in the input field to search the list for specific items:</p>
+
+
+        <div class="box1">
+
+            <input type="search" placeholder="Que quiere sapo" id="pin" name="pin" maxlength="8" size="20"><br><br>
+        </div>
+
+    </div>
+    </div>>
+
+    <div class="box box1"></div>
+</header>
+
+
+<div class="container">
+
+    <br>
+    <ul class="list-group" id="myList">
+        <li class="list-group-item">Marcelo</li>
+        <li class="list-group-item">Second Vargas</li>
+        <li class="list-group-item">Third item</li>
+        <li class="list-group-item">Fourth</li>
+    </ul>
+</div>
+
+
+
+<footer></footer>
+
+
+<body>
+    <section class="header">
+        <div class="title">
+            <h5>Wish</h5>
+
+            <div class="container">
+
+            </div>
+
+            <link rel="stylesheet" href="js/bootstrap.min.js">
+</body>
+
+<script>
+    $(document).ready(function() {
+        $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myList li").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
+
+
+</html>

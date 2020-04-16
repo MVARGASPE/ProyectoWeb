@@ -1,0 +1,19 @@
+section.header {
+    border: 2px solid black;
+}
+
+div.box1 {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    left: 1000px;
+    border: 2px solid red;
+}
+
+div.title {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    left: 10px;
+    border: 2px solid black;
+}
